@@ -1,6 +1,7 @@
 <script setup>
-import MainContainer from './components/MainContainer.vue';
+import { RouterView } from 'vue-router'
 </script>
+
 <template>
-  <MainContainer/>
+  <RouterView />
 </template>
