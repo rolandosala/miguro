@@ -68,7 +68,7 @@ const routes = [
         path: '/',
         component: () => import("@/views/NotFoundContainerLayout.vue"),
         children: [
-            { path: '/:pathMatch(.*)', component: () => import("@/views/404.vue") }
+            { path: '/:catchAll(.*)', component: () => import("@/views/404.vue") }
         ]
     },
 ];
