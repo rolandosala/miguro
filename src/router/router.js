@@ -64,13 +64,7 @@ const routes = [
             { path: '/howquestion', component: () => import("@/components/Questions/HowQuestion.vue") },
         ]
     },
-    {
-        path: '/',
-        component: () => import("@/views/NotFoundContainerLayout.vue"),
-        children: [
-            { path: '/:catchAll(.*)', component: () => import("@/views/404.vue") }
-        ]
-    },
+    { path: '/:catchAll(.*)', component: () => import("@/views/404.vue") },
 ];
 
 const router = createRouter({
