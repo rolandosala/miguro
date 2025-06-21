@@ -17,6 +17,13 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        sanitizeFileName(name) {
+          return name.replace(/^_+/, '')  // strip leading underscores
+        }
+      }
+    }
   }
 })

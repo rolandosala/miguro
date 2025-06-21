@@ -68,7 +68,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHashHistory('/miguro/'),
     routes,
     scrollBehavior(to, from, savedPosition) {
         return { top: 0 }; // Scroll to top
