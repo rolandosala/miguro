@@ -140,11 +140,11 @@ export default {
                 {
                     item: 'Exercises', link: '', collapse: 'collapse', target: 'practice',
                     submenu: [
-                        { item: 'Practice N1', link: '/flashcards' },
-                        { item: 'Practice N2', link: '/translation' },
-                        { item: 'Practice N3', link: '/reading' },
-                        { item: 'Practice N4', link: '/listening' },
-                        { item: 'Practice N5', link: '/practice_n5' },
+                        { item: 'Flashcard', link: '/flashcards' },
+                        { item: 'Translation', link: '/translation' },
+                        { item: 'Reading', link: '/reading' },
+                        { item: 'Grammar', link: '/listening' },
+                        { item: 'Listening', link: '/practice_n5' },
                         /* { item: 'Fill Blank', link: '/filltheblank' }, */
                     ]
                 },

@@ -766,13 +766,14 @@ export default {
 
             }
             this.card_index = id;
-        },
+        }, 
         checkAnswer(text) {
             if (this.card_index === 0) {
                 text === this.cards[this.index].characters[this.rand].correctAnswer ? this.correct_answer++ : this.wrong_answer++;
                 this.preview_answers.push(
                     { kanji: this.cards[this.index].characters[this.rand].character, meaning: this.cards[this.index].characters[this.rand].meaning, correct_answer: this.cards[this.index].characters[this.rand].correctAnswer, user_answer: text }
                 );
+                console.log(this.preview_answers);
                 this.getRandomKanji(this.index);
             } else if (this.card_index === 1) {
                 if (this.vocabulary_count === 10) {

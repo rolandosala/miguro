@@ -21,7 +21,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="d-flex justify-content-center align-items-center flex-column">
-                                <p><strong>{{ data.paragraph.japanese }}</strong></p>
+                                <p style="text-align: center"><strong>{{ data.paragraph.japanese }}</strong></p>
                                 <p v-if="show_romaji"><em>{{ data.paragraph.romaji }}</em></p>
                                 <p v-if="show_english">{{ data.paragraph.english }}</p>
                                 <div class="col-12 p-2">

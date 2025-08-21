@@ -107,7 +107,7 @@ export default {
             btn_check: 'Next',
             cards: [
                 {
-                    id: 'cardOne', img: '/miguro_1.png', title: 'N5 Kanji',
+                    id: 'cardOne', img: '/miguro_1.png', title: 'Level 1',
                     translations: [
                         {
                             id: 1,
@@ -171,6 +171,267 @@ export default {
                         }
                     ]
                 },
+                {
+                    id: 'cardTwo', img: '/miguro_1.png', title: 'Level 2',
+                    translations: [
+                        {
+                            id: 1,
+                            japanese: "これは　りんごです。",
+                            romaji: "Kore wa ringo desu.",
+                            english: "This is an apple."
+                        },
+                        {
+                            id: 2,
+                            japanese: "ねこが　います。",
+                            romaji: "Neko ga imasu.",
+                            english: "There is a cat."
+                        },
+                        {
+                            id: 3,
+                            japanese: "わたしは　がくせいです。",
+                            romaji: "Watashi wa gakusei desu.",
+                            english: "I am a student."
+                        },
+                        {
+                            id: 4,
+                            japanese: "いぬは　そとに　います。",
+                            romaji: "Inu wa soto ni imasu.",
+                            english: "The dog is outside."
+                        },
+                        {
+                            id: 5,
+                            japanese: "でんしゃで　いきます。",
+                            romaji: "Densha de ikimasu.",
+                            english: "I go by train."
+                        },
+                        {
+                            id: 6,
+                            japanese: "みずを　のみます。",
+                            romaji: "Mizu o nomimasu.",
+                            english: "I drink water."
+                        },
+                        {
+                            id: 7,
+                            japanese: "きのう、えいがを　みました。",
+                            romaji: "Kinō, eiga o mimashita.",
+                            english: "I watched a movie yesterday."
+                        },
+                        {
+                            id: 8,
+                            japanese: "としょかんは　どこですか？",
+                            romaji: "Toshokan wa doko desu ka?",
+                            english: "Where is the library?"
+                        },
+                        {
+                            id: 9,
+                            japanese: "あさごはんを　たべましたか？",
+                            romaji: "Asagohan o tabemashita ka?",
+                            english: "Did you eat breakfast?"
+                        },
+                        {
+                            id: 10,
+                            japanese: "にほんごを　べんきょうしています。",
+                            romaji: "Nihongo o benkyō shiteimasu.",
+                            english: "I am studying Japanese."
+                        }
+                    ]
+                },
+                {
+                    id: 'cardThree', img: '/miguro_1.png', title: 'Level 3',
+                    translations: [
+                        {
+                            id: 1,
+                            japanese: "これは　りんごです。",
+                            romaji: "Kore wa ringo desu.",
+                            english: "This is an apple."
+                        },
+                        {
+                            id: 2,
+                            japanese: "ねこが　います。",
+                            romaji: "Neko ga imasu.",
+                            english: "There is a cat."
+                        },
+                        {
+                            id: 3,
+                            japanese: "わたしは　がくせいです。",
+                            romaji: "Watashi wa gakusei desu.",
+                            english: "I am a student."
+                        },
+                        {
+                            id: 4,
+                            japanese: "いぬは　そとに　います。",
+                            romaji: "Inu wa soto ni imasu.",
+                            english: "The dog is outside."
+                        },
+                        {
+                            id: 5,
+                            japanese: "でんしゃで　いきます。",
+                            romaji: "Densha de ikimasu.",
+                            english: "I go by train."
+                        },
+                        {
+                            id: 6,
+                            japanese: "みずを　のみます。",
+                            romaji: "Mizu o nomimasu.",
+                            english: "I drink water."
+                        },
+                        {
+                            id: 7,
+                            japanese: "きのう、えいがを　みました。",
+                            romaji: "Kinō, eiga o mimashita.",
+                            english: "I watched a movie yesterday."
+                        },
+                        {
+                            id: 8,
+                            japanese: "としょかんは　どこですか？",
+                            romaji: "Toshokan wa doko desu ka?",
+                            english: "Where is the library?"
+                        },
+                        {
+                            id: 9,
+                            japanese: "あさごはんを　たべましたか？",
+                            romaji: "Asagohan o tabemashita ka?",
+                            english: "Did you eat breakfast?"
+                        },
+                        {
+                            id: 10,
+                            japanese: "にほんごを　べんきょうしています。",
+                            romaji: "Nihongo o benkyō shiteimasu.",
+                            english: "I am studying Japanese."
+                        }
+                    ]
+                },
+                {
+                    id: 'cardFour', img: '/miguro_1.png', title: 'Level 4',
+                    translations: [
+                        {
+                            id: 1,
+                            japanese: "これは　りんごです。",
+                            romaji: "Kore wa ringo desu.",
+                            english: "This is an apple."
+                        },
+                        {
+                            id: 2,
+                            japanese: "ねこが　います。",
+                            romaji: "Neko ga imasu.",
+                            english: "There is a cat."
+                        },
+                        {
+                            id: 3,
+                            japanese: "わたしは　がくせいです。",
+                            romaji: "Watashi wa gakusei desu.",
+                            english: "I am a student."
+                        },
+                        {
+                            id: 4,
+                            japanese: "いぬは　そとに　います。",
+                            romaji: "Inu wa soto ni imasu.",
+                            english: "The dog is outside."
+                        },
+                        {
+                            id: 5,
+                            japanese: "でんしゃで　いきます。",
+                            romaji: "Densha de ikimasu.",
+                            english: "I go by train."
+                        },
+                        {
+                            id: 6,
+                            japanese: "みずを　のみます。",
+                            romaji: "Mizu o nomimasu.",
+                            english: "I drink water."
+                        },
+                        {
+                            id: 7,
+                            japanese: "きのう、えいがを　みました。",
+                            romaji: "Kinō, eiga o mimashita.",
+                            english: "I watched a movie yesterday."
+                        },
+                        {
+                            id: 8,
+                            japanese: "としょかんは　どこですか？",
+                            romaji: "Toshokan wa doko desu ka?",
+                            english: "Where is the library?"
+                        },
+                        {
+                            id: 9,
+                            japanese: "あさごはんを　たべましたか？",
+                            romaji: "Asagohan o tabemashita ka?",
+                            english: "Did you eat breakfast?"
+                        },
+                        {
+                            id: 10,
+                            japanese: "にほんごを　べんきょうしています。",
+                            romaji: "Nihongo o benkyō shiteimasu.",
+                            english: "I am studying Japanese."
+                        }
+                    ]
+                },
+                {
+                    id: 'cardFive', img: '/miguro_1.png', title: 'Level 5',
+                    translations: [
+                        {
+                            id: 1,
+                            japanese: "これは　りんごです。",
+                            romaji: "Kore wa ringo desu.",
+                            english: "This is an apple."
+                        },
+                        {
+                            id: 2,
+                            japanese: "ねこが　います。",
+                            romaji: "Neko ga imasu.",
+                            english: "There is a cat."
+                        },
+                        {
+                            id: 3,
+                            japanese: "わたしは　がくせいです。",
+                            romaji: "Watashi wa gakusei desu.",
+                            english: "I am a student."
+                        },
+                        {
+                            id: 4,
+                            japanese: "いぬは　そとに　います。",
+                            romaji: "Inu wa soto ni imasu.",
+                            english: "The dog is outside."
+                        },
+                        {
+                            id: 5,
+                            japanese: "でんしゃで　いきます。",
+                            romaji: "Densha de ikimasu.",
+                            english: "I go by train."
+                        },
+                        {
+                            id: 6,
+                            japanese: "みずを　のみます。",
+                            romaji: "Mizu o nomimasu.",
+                            english: "I drink water."
+                        },
+                        {
+                            id: 7,
+                            japanese: "きのう、えいがを　みました。",
+                            romaji: "Kinō, eiga o mimashita.",
+                            english: "I watched a movie yesterday."
+                        },
+                        {
+                            id: 8,
+                            japanese: "としょかんは　どこですか？",
+                            romaji: "Toshokan wa doko desu ka?",
+                            english: "Where is the library?"
+                        },
+                        {
+                            id: 9,
+                            japanese: "あさごはんを　たべましたか？",
+                            romaji: "Asagohan o tabemashita ka?",
+                            english: "Did you eat breakfast?"
+                        },
+                        {
+                            id: 10,
+                            japanese: "にほんごを　べんきょうしています。",
+                            romaji: "Nihongo o benkyō shiteimasu.",
+                            english: "I am studying Japanese."
+                        }
+                    ]
+                },
+                
             ],
             preview_answers: []
 
