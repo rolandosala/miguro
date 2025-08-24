@@ -3,7 +3,7 @@
         <div class="col-sm-12">
             <div class="col-sm-12 col-lg-12 d-flex flex-wrap">
                 <div class="col-sm-12 col-lg-4">
-                    <img src="/miguro_2.png" alt="" style="width: 100%;">
+                    <img src="/miguro_2.webp" alt="" style="width: 100%;">
                 </div>
                 <div class="col-sm-12 col-lg-8 d-flex flex-column justify-content-center ">
                     <h4 class="text-center">{{ title }}</h4>

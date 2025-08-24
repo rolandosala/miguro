@@ -26,74 +26,74 @@ export default {
                 { japanese: '映画 _______ 見ます。', kana: 'Eiga _____ mimasu.', english: 'I will watch a movie.', answer: 'を', choices: ['に', 'を', 'で', 'が'] },
                 { japanese: '洋服 _______ 買います。', kana: 'Yoofuku _____ kaimasu.', english: 'I will buy clothes.', answer: 'を', choices: ['に', 'を', 'で', 'が'] },
                 {
-                    "japanese": "本 _______ 読みます。",
-                    "kana": "Hon _____ yomimasu.",
-                    "english": "I read a book.",
-                    "answer": "を",
-                    "choices": ["を", "に", "で", "が"]
+                    japanese: "本 _______ 読みます。",
+                    kana: "Hon _____ yomimasu.",
+                    english: "I read a book.",
+                    answer: "を",
+                    choices: ["を", "に", "で", "が"]
                 },
                 {
-                    "japanese": "学校 _______ 行きます。",
-                    "kana": "Gakkou _____ ikimasu.",
-                    "english": "I go to school.",
-                    "answer": "に",
-                    "choices": ["に", "を", "が", "で"]
+                    japanese: "学校 _______ 行きます。",
+                    kana: "Gakkou _____ ikimasu.",
+                    english: "I go to school.",
+                    answer: "に",
+                    choices: ["に", "を", "が", "で"]
                 },
                 {
-                    "japanese": "先生 _______ 話します。",
-                    "kana": "Sensei _____ hanashimasu.",
-                    "english": "I talk to the teacher.",
-                    "answer": "に",
-                    "choices": ["に", "と", "が", "を"]
+                    japanese: "先生 _______ 話します。",
+                    kana: "Sensei _____ hanashimasu.",
+                    english: "I talk to the teacher.",
+                    answer: "に",
+                    choices: ["に", "と", "が", "を"]
                 },
                 {
-                    "japanese": "日本語 _______ 勉強します。",
-                    "kana": "Nihongo _____ benkyou shimasu.",
-                    "english": "I study Japanese.",
-                    "answer": "を",
-                    "choices": ["を", "に", "が", "で"]
+                    japanese: "日本語 _______ 勉強します。",
+                    kana: "Nihongo _____ benkyou shimasu.",
+                    english: "I study Japanese.",
+                    answer: "を",
+                    choices: ["を", "に", "が", "で"]
                 },
                 {
-                    "japanese": "図書館 _______ 勉強します。",
-                    "kana": "Toshokan _____ benkyou shimasu.",
-                    "english": "I study at the library.",
-                    "answer": "で",
-                    "choices": ["で", "に", "を", "が"]
+                    japanese: "図書館 _______ 勉強します。",
+                    kana: "Toshokan _____ benkyou shimasu.",
+                    english: "I study at the library.",
+                    answer: "で",
+                    choices: ["で", "に", "を", "が"]
                 },
                 {
-                    "japanese": "友だち _______ 会います。",
-                    "kana": "Tomodachi _____ aimasu.",
-                    "english": "I meet my friend.",
-                    "answer": "に",
-                    "choices": ["に", "と", "で", "が"]
+                    japanese: "友だち _______ 会います。",
+                    kana: "Tomodachi _____ aimasu.",
+                    english: "I meet my friend.",
+                    answer: "に",
+                    choices: ["に", "と", "で", "が"]
                 },
                 {
-                    "japanese": "音楽 _______ 聞きます。",
-                    "kana": "Ongaku _____ kikimasu.",
-                    "english": "I listen to music.",
-                    "answer": "を",
-                    "choices": ["を", "に", "で", "が"]
+                    japanese: "音楽 _______ 聞きます。",
+                    kana: "Ongaku _____ kikimasu.",
+                    english: "I listen to music.",
+                    answer: "を",
+                    choices: ["を", "に", "で", "が"]
                 },
                 {
-                    "japanese": "バス _______ 学校へ行きます。",
-                    "kana": "Basu _____ gakkou e ikimasu.",
-                    "english": "I go to school by bus.",
-                    "answer": "で",
-                    "choices": ["で", "を", "に", "が"]
+                    japanese: "バス _______ 学校へ行きます。",
+                    kana: "Basu _____ gakkou e ikimasu.",
+                    english: "I go to school by bus.",
+                    answer: "で",
+                    choices: ["で", "を", "に", "が"]
                 },
                 {
-                    "japanese": "猫 _______ 好きです。",
-                    "kana": "Neko _____ suki desu.",
-                    "english": "I like cats.",
-                    "answer": "が",
-                    "choices": ["が", "を", "に", "で"]
+                    japanese: "猫 _______ 好きです。",
+                    kana: "Neko _____ suki desu.",
+                    english: "I like cats.",
+                    answer: "が",
+                    choices: ["が", "を", "に", "で"]
                 },
                 {
-                    "japanese": "家 _______ 帰ります。",
-                    "kana": "Ie _____ kaerimasu.",
-                    "english": "I return home.",
-                    "answer": "に",
-                    "choices": ["に", "で", "を", "が"]
+                    japanese: "家 _______ 帰ります。",
+                    kana: "Ie _____ kaerimasu.",
+                    english: "I return home.",
+                    answer: "に",
+                    choices: ["に", "で", "を", "が"]
                 }
             ]
         }

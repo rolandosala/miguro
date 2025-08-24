@@ -10,7 +10,7 @@ import { RouterView } from 'vue-router';
         <div class="row">
             <div class="col-sm-12 col-lg-2">
                 <Sidebar />
-            </div>
+            </div> 
             <div class="col-sm-12  col-lg-10">
                 <div class="row">
                     <Topbar />

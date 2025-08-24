@@ -17,7 +17,7 @@
                     <p><strong>[Topic] + は + [Information about the topic]</strong></p>
                 </div>
                 <!-- <div class="col-4">
-                    <img src="/miguro_1.png" alt="" style="width: 80%;">
+                    <img src="/miguro_1.webp" alt="" style="width: 80%;">
                 </div> -->
             </div>
         </div>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-4 d-flex justify-content-center flex-column align-items-center">
-                    <img src="/miguro_3.png" alt="" style="width: 80%;">
+                    <img src="/miguro_3.webp" alt="" style="width: 80%;">
                     <button class="btn btn-outline-success form-control">Would you like a practice?</button>
                 </div>
             </div>

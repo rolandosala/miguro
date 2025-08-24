@@ -1,6 +1,7 @@
 <template>
     <div class="row p-lg-4 d-flex justify-content-center align-items-center">
-        <h4 class="fs-1">Flashcards</h4>
+        <h4 class="fs-4">Flashcards Exercise</h4>
+        <hr>
         <div class="row ">
             <div class="col-sm-12 col-lg-3 mt-4" v-for="(data, index) in cards">
                 <div class="card p-3 shadow" :data-bs-target="'#' + data.id" data-bs-toggle="modal"
@@ -21,19 +22,27 @@
                                 @click="resetTimer"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="d-flex justify-content-center align-items-center flex-column">
-                                <h1 class="" style="font-size: 4em;">{{ kanji }}</h1>
-                                <!-- <h5 class="">{{ meaning }}</h5> -->
-                                <div
-                                    class="col-10 border border-top d-flex justify-content-center align-items-center flex-column">
-                                    <h5 class="">{{ time }}</h5>
-                                    <h6 class="">Correct: {{ correct_answer }} | Wrong: {{ wrong_answer }}</h6>
+                            <div>
+                                <div v-if="!disable_choices"
+                                    class="d-flex justify-content-center align-items-center flex-column">
+                                    <h1 class="" style="font-size: 4em;">{{ kanji }}</h1>
+                                    <!-- <h5 class="">{{ meaning }}</h5> -->
+                                    <div
+                                        class="col-10 border border-top d-flex justify-content-center align-items-center flex-column">
+                                        <h5 class="">{{ time }}</h5>
+                                        <h6 class="">Correct: {{ correct_answer }} | Wrong: {{ wrong_answer }}</h6>
+                                    </div>
+
+                                    <div
+                                        class="col-12 d-flex justify-content-center p-4 align-items-center mt-3 flex-wrap">
+                                        <button class="btn btn-outline-primary col-5 m-1" v-for="ch in choices"
+                                            @click="checkAnswer(ch)">{{ ch }}</button>
+                                    </div>
+                                </div>
+                                <div v-else class="d-flex justify-content-center align-items-center flex-column">
+                                    <p style="font-size: 3em;">Times up</p>
                                 </div>
 
-                                <div class="col-12 d-flex justify-content-center p-4 align-items-center mt-3 flex-wrap">
-                                    <button class="btn btn-outline-primary col-5 m-1" v-for="ch in choices"
-                                        @click="checkAnswer(ch)" :disabled="disable_choices">{{ ch }}</button>
-                                </div>
                             </div>
                         </div>
                         <div class="modal-footer  d-flex justify-content-center align-items-center"
@@ -50,24 +59,26 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Preview Answers</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <table class="table">
                                 <thead>
-                                    <tr>
-                                        <th>Kanji</th>
+                                    <tr style="text-align: center">
+                                        <th>Character</th>
                                         <th>Meaning</th>
                                         <th>Correct Answer</th>
                                         <th>Your Answer</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr v-for="data in preview_answers">
+                                    <tr v-for="data in preview_answers" style="text-align: center">
                                         <td>{{ data.kanji }}</td>
                                         <td>{{ data.meaning }}</td>
                                         <td>{{ data.correct_answer }}</td>
-                                        <td>{{ data.user_answer }}</td>
+                                        <td>{{ data.user_answer }}
+                                            <i class="bi bi-check-circle-fill text-success" v-if="data.correct_answer === data.user_answer"></i>
+                                            <i class="bi bi-x-circle-fill text-danger" v-else></i>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -107,7 +118,7 @@ export default {
             disable_choices: false,
             cards: [
                 {
-                    id: 'cardOne', img: '/miguro/miguro_1.png', title: 'Hiragana',
+                    id: 'cardOne', img: '/miguro_2.webp', title: 'Hiragana',
                     characters: [
                         { character: "あ", meaning: "a", choices: ["a", "i", "u", "e"], correctAnswer: "a" },
                         { character: "い", meaning: "i", choices: ["i", "a", "e", "o"], correctAnswer: "i" },
@@ -239,25 +250,10 @@ export default {
                         { character: "ちぇ", meaning: "che", choices: ["che", "cha", "chi", "chu"], correctAnswer: "che" },
                         { character: "しぇ", meaning: "she", choices: ["she", "sha", "shi", "sho"], correctAnswer: "she" },
                         { character: "じぇ", meaning: "je", choices: ["je", "ji", "jo", "ja"], correctAnswer: "je" }
-
-
-
-                        /* { character: "ぁ", meaning: "small a", choices: ["a", "small a", "i", "o"], correctAnswer: "small a" },
-                        { character: "ぃ", meaning: "small i", choices: ["i", "small i", "e", "u"], correctAnswer: "small i" },
-                        { character: "ぅ", meaning: "small u", choices: ["u", "small u", "o", "a"], correctAnswer: "small u" },
-                        { character: "ぇ", meaning: "small e", choices: ["e", "small e", "i", "o"], correctAnswer: "small e" },
-                        { character: "ぉ", meaning: "small o", choices: ["o", "small o", "a", "u"], correctAnswer: "small o" },
-
-                        { character: "ゃ", meaning: "small ya", choices: ["ya", "small ya", "yu", "yo"], correctAnswer: "small ya" },
-                        { character: "ゅ", meaning: "small yu", choices: ["yu", "small yu", "ya", "yo"], correctAnswer: "small yu" },
-                        { character: "ょ", meaning: "small yo", choices: ["yo", "small yo", "yu", "ya"], correctAnswer: "small yo" },
-
-                        { character: "っ", meaning: "small tsu (sokuon)", choices: ["tsu", "small tsu", "chi", "su"], correctAnswer: "small tsu" },
-                        { character: "ゎ", meaning: "small wa", choices: ["wa", "small wa", "wo", "ra"], correctAnswer: "small wa" } */
                     ]
                 },
                 {
-                    id: 'cardTwo', img: '/miguro/miguro_2.png', title: 'Katakana',
+                    id: 'cardTwo', img: '/miguro_2.webp', title: 'Katakana',
                     characters: [
                         { character: "ア", meaning: "a", choices: ["a", "i", "u", "e"], correctAnswer: "a" },
                         { character: "イ", meaning: "i", choices: ["i", "a", "e", "o"], correctAnswer: "i" },
@@ -424,7 +420,7 @@ export default {
                     ]
                 },
                 {
-                    id: 'cardThree', img: '/miguro/miguro_3.png', title: 'Random Kanji',
+                    id: 'cardThree', img: '/miguro_3.webp', title: 'Random Kanji',
                     characters: [
                         { character: "日", meaning: "day, sun", onyomi: "ニチ, ジツ", kunyomi: "ひ, か", choices: ["hi", "nichi", "bi", "ka"], correctAnswer: "nichi" },
                         { character: "月", meaning: "moon, month", onyomi: "ゲツ, ガツ", kunyomi: "つき", choices: ["getsu", "gatsu", "tsuki", "mitsu"], correctAnswer: "tsuki" },
@@ -486,7 +482,7 @@ export default {
 
                 },
                 {
-                    id: 'cardFive', img: '/miguro/miguro_1.png', title: 'Vocabularies',
+                    id: 'cardFive', img: '/miguro_1.webp', title: 'Vocabularies',
                     characters: [
                         {
                             character: "学校",
@@ -918,20 +914,26 @@ export default {
             text === this.cards[this.index].characters[this.rand].correctAnswer ? this.correct_answer++ : this.wrong_answer++;
 
             this.preview_answers.push(
-                { kanji: this.cards[this.index].characters[this.rand].kanji, meaning: this.cards[this.index].characters[this.rand].meaning, correct_answer: this.cards[this.index].characters[this.rand].correctAnswer, user_answer: text }
+                { kanji: this.kanji, meaning: this.cards[this.index].characters[this.rand].meaning, correct_answer: this.cards[this.index].characters[this.rand].correctAnswer, user_answer: text }
             );
-            console.log(this.preview_answers);
             this.getRandomKanji(this.index);
 
         },
         getRandomKanji(id) {
             this.index = id;
-            console.log(id)
             this.rand = Math.floor(Math.random() * this.cards[this.index].characters.length);
             this.kanji = this.cards[this.index].characters[this.rand].character;
             this.meaning = this.cards[this.index].characters[this.rand].meaning;
-            this.choices = this.cards[this.index].characters[this.rand].choices;
+            this.choices = this.shuffleArray(this.cards[this.index].characters[this.rand].choices);
             this.difficulty = this.cards[this.index].characters[this.rand].difficulty;
+        },
+        shuffleArray(array) {
+            let shuffled = [...array]; // copy so original isn't mutated
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
         },
         timer() {
             if (this.intervalTime) {
@@ -946,8 +948,6 @@ export default {
                     this.time--;
                 }
             }, 1000);
-            console.log('Interval started:', this.intervalTime);
-            console.log('Initial time:', this.time);
         },
         resetTimer() {
             if (this.intervalTime) {
@@ -960,7 +960,6 @@ export default {
             this.correct_answer = 0;
             this.wrong_answer = 0;
             this.preview_answers = [];
-            console.log('Timer reset');
         },
         /*   async getRandomKanji(id) {
               this.index = id;

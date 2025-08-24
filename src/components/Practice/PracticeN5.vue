@@ -90,9 +90,9 @@
                                 <td>{{ data.meaning }}</td>
                                 <td>{{ data.correct_answer }}</td>
                                 <td>{{ data.user_answer }}
-                                    <span v-if="data.correct_answer === data.user_answer"
-                                        class="badge text-bg-success">Correct</span>
-                                    <span v-else class="badge text-bg-danger">Wrong</span>
+                                    <i class="bi bi-check-circle-fill text-success"
+                                        v-if="data.correct_answer === data.user_answer"></i>
+                                    <i class="bi bi-x-circle-fill text-danger" v-else></i>
                                 </td>
                             </tr>
                         </tbody>
@@ -135,7 +135,7 @@ export default {
             disable_choices: false,
             cards: [
                 {
-                    id: 'cardOne', img: '/miguro_1.png', title: 'Kanji Flashcards',
+                    id: 'cardOne', img: '/miguro_2.webp', title: 'Kanji Flashcards',
                     /*  characters: [] */
                     characters: [
                         {
@@ -321,7 +321,7 @@ export default {
                     ]
                 },
                 {
-                    id: 'cardTwo', img: '/miguro_2.png', title: 'Vocabularies',
+                    id: 'cardTwo', img: '/miguro_2.webp', title: 'Vocabularies',
                     vocabulary: [
                         {
                             difficulty: 'N5',
@@ -366,7 +366,7 @@ export default {
                     ]
                 },
                 {
-                    id: 'cardThree', img: '/miguro_3.png', title: 'Reading',
+                    id: 'cardThree', img: '/miguro_3.webp', title: 'Reading',
                     paragraph: {
                         "japanese": "これは たなかさん の いぬ です。いぬ の なまえ は ポチ です。ポチ は しろい いぬ です。まいにち こうえん へ いきます。",
                         "romaji": "Kore wa Tanaka-san no inu desu. Inu no namae wa Pochi desu. Pochi wa shiroi inu desu. Mainichi kōen e ikimasu.",
@@ -394,7 +394,7 @@ export default {
                     ]
                 },
                 {
-                    id: 'cardFour', img: '/miguro_4.png', title: 'Listening',
+                    id: 'cardFour', img: '/miguro_4.webp', title: 'Listening',
                     characters: [
                         {
                             difficulty: 'N2',
@@ -580,7 +580,7 @@ export default {
 
                 },
                 {
-                    id: 'cardFive', img: '/miguro_1.png', title: 'Grammar',
+                    id: 'cardFive', img: '/miguro_1.webp', title: 'Grammar',
                     characters: [
                         {
                             character: '儒',
@@ -766,7 +766,7 @@ export default {
 
             }
             this.card_index = id;
-        }, 
+        },
         checkAnswer(text) {
             if (this.card_index === 0) {
                 text === this.cards[this.index].characters[this.rand].correctAnswer ? this.correct_answer++ : this.wrong_answer++;

@@ -4,7 +4,7 @@
         <div class="position-sticky top-0 z-3 bg-light text-center">
             <a href="#" class="text-center text-dark text-decoration-none ">
                 <span class="fs-4">MIGURO</span>
-            </a> 
+            </a>
             <hr>
         </div>
 
@@ -12,7 +12,8 @@
             <li v-for="data in menu_1">
                 <RouterLink :to="data.link">
                     <span class="nav-link link-dark mx-1 menu" :class="{ active: $route.path === data.link }"
-                        :data-bs-toggle="data.collapse" :href="'#' + data.target" role="button">{{ data.item }}</span>
+                        :data-bs-toggle="data.collapse" :data-bs-target="'#' + data.target" :href="'#' + data.target"
+                        role="button">{{ data.item }}</span>
                 </RouterLink>
                 <div :class="data.collapse" class="accordion-collapse" :id="data.target">
                     <ul class="nav nav-pills flex-column mx-3 text-left">
@@ -46,10 +47,10 @@
             </li>
         </ul>
         <hr>
-        <button class="btn btn-outline-success form-control" data-bs-toggle="offcanvas" data-bs-target="#chatwithmiguroCanvas"
-            aria-controls="offcanvasResponsive">Chat with Miguro</button>
-        <button class="btn btn-outline-success mt-2 form-control" data-bs-toggle="offcanvas" data-bs-target="#chatwithfriendCanvas"
-            aria-controls="offcanvasResponsive">Chat with Friend</button>
+        <button class="btn btn-outline-success form-control" data-bs-toggle="offcanvas"
+            data-bs-target="#chatwithmiguroCanvas" aria-controls="offcanvasResponsive">Chat with Miguro</button>
+        <button class="btn btn-outline-success mt-2 form-control" data-bs-toggle="offcanvas"
+            data-bs-target="#chatwithfriendCanvas" aria-controls="offcanvasResponsive">Chat with Friend</button>
     </div>
 </template>
 <script>
@@ -143,26 +144,16 @@ export default {
                         { item: 'Flashcard', link: '/flashcards' },
                         { item: 'Translation', link: '/translation' },
                         { item: 'Reading', link: '/reading' },
-                        { item: 'Grammar', link: '/listening' },
-                        { item: 'Listening', link: '/practice_n5' },
+                        { item: 'Listening', link: '/listening' },
+                        { item: 'Grammar', link: '/grammar' },
                         /* { item: 'Fill Blank', link: '/filltheblank' }, */
                     ]
                 },
                 {
-                    item: 'Mock Test', link: '', collapse: 'collapse', target: 'mocktest',
-                    submenu: [
-                        { item: 'JLPT 5', link: '/mocktest5' },
-                        { item: 'JLPT 4', link: '' },
-                        { item: 'JLPT 3', link: '' },
-                        { item: 'JLPT 2', link: '' },
-                        { item: 'JLPT 1', link: '' },
-                    ]
+                    item: 'Mock Test', link: '/mocktest', collapse: '', target: '',
                 },
             ],
         }
-    },
-    mounted() {
-        //this.checklist(); 
     },
     methods: {
         checklist() {

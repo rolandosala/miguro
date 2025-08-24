@@ -3,7 +3,7 @@
         <div class="col-12">
             <div class="row">
                 <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-                    <img src="/miguro_4.png" alt="" style="width: 80%;">
+                    <img src="/miguro_4.webp" alt="" style="width: 80%;">
                 </div>
                 <div class="col-sm-12 col-lg-8">
                     <h4>Mastering Japanese Particles: Guide, Tips & Techniques</h4>

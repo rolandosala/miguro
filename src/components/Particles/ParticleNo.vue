@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-4 d-flex justify-content-center flex-column align-items-center ">
-                    <img src="/miguro_3.png" alt="" style="width: 60%;">
+                    <img src="/miguro_3.webp" alt="" style="width: 60%;">
                     <button class="btn btn-outline-success">Would you like a practice?</button>
                 </div>
             </div>

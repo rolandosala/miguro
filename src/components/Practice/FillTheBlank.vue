@@ -104,7 +104,7 @@ export default {
             disable_choices: false,
             cards: [
                 {
-                    id: 'cardOne', img: '/miguro_1.png', title: 'Basic Kanji',
+                    id: 'cardOne', img: '/miguro_1.webp', title: 'Basic Kanji',
                     characters: [
                         {
                             difficulty: 'N5',

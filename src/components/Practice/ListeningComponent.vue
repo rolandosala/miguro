@@ -50,7 +50,7 @@ export default {
             preview_answer: [],
             cards: [
                 {
-                    id: 'cardOne', img: '/miguro_1.png', title: 'Basic Translation',
+                    id: 'cardOne', img: '/miguro_1.webp', title: 'Basic Translation',
                     questions: [
                         {
                             audio: "Please",

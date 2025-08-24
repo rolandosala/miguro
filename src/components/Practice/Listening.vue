@@ -1,6 +1,6 @@
 <template>
     <div class="row p-4">
-        <h4>Listening Practice</h4>
+        <h4 class="fs-4">Listening Exercise</h4>
         <hr>
         <div class="row">
             <div class="col-3 mt-4" v-for="(data, index) in cards">
@@ -21,15 +21,16 @@
                         </div>
                         <div class="modal-body">
                             <div class="d-flex justify-content-center align-items-center flex-column">
+
                                 <audio id="birdAudio" :src="'/audio/' + audio + '.mp3'" type="audio/mp3" autoplay>
                                     <!-- <source   /> -->
                                 </audio>
-
+                                <img src="/miguro_1.webp" alt="" style="width: 30%;">
                                 <button class="btn btn-outline-success fs-1"
-                                    onclick="document.getElementById('birdAudio').play()">
+                                    onclick="document.getElementById('birdAudio').play()" style="margin-top: -2.5em; opacity: 0">
                                     <i class="bi bi-play"></i></button>
-                                <p>{{ count }}</p>
-                                <div class="form-floating mt-4 mb-3 col-12">
+                                <!-- <p>{{ count }}</p> -->
+                                <div class="form-floating mt-5 mb-3 col-12">
                                     <input type="text" class="form-control" id="floatingInput"
                                         placeholder="name@example.com" v-model="user_answer">
                                     <label for="floatingInput">Your Answer</label>
@@ -93,7 +94,7 @@ export default {
             preview_answer: [],
             cards: [
                 {
-                    id: 'cardOne', img: '/miguro_1.png', title: 'Basic Translation',
+                    id: 'cardOne', img: '/miguro_1.webp', title: 'Listening 1',
                     questions: [
                         {
                             audio: "Please",
@@ -128,7 +129,154 @@ export default {
                             answer: "Your Welcome"
                         },
                     ]
-
+                },
+                {
+                    id: 'cardOne', img: '/miguro_1.webp', title: 'Listening 2',
+                    questions: [
+                        {
+                            audio: "Please",
+                            answer: "Please"
+                        },
+                        {
+                            audio: "Good Afternoon",
+                            answer: "Good Afternoon"
+                        },
+                        {
+                            audio: "Good Evening",
+                            answer: "Good Evening"
+                        },
+                        {
+                            audio: "Good Morning",
+                            answer: "Good Morning"
+                        },
+                        {
+                            audio: "Goodbye",
+                            answer: "Goodbye"
+                        },
+                        {
+                            audio: "Thank you",
+                            answer: "Thank you"
+                        },
+                        {
+                            audio: "Thats right",
+                            answer: "Thats right"
+                        },
+                        {
+                            audio: "Welcome",
+                            answer: "Your Welcome"
+                        },
+                    ]
+                },
+                {
+                    id: 'cardOne', img: '/miguro_1.webp', title: 'Listening 3',
+                    questions: [
+                        {
+                            audio: "Please",
+                            answer: "Please"
+                        },
+                        {
+                            audio: "Good Afternoon",
+                            answer: "Good Afternoon"
+                        },
+                        {
+                            audio: "Good Evening",
+                            answer: "Good Evening"
+                        },
+                        {
+                            audio: "Good Morning",
+                            answer: "Good Morning"
+                        },
+                        {
+                            audio: "Goodbye",
+                            answer: "Goodbye"
+                        },
+                        {
+                            audio: "Thank you",
+                            answer: "Thank you"
+                        },
+                        {
+                            audio: "Thats right",
+                            answer: "Thats right"
+                        },
+                        {
+                            audio: "Welcome",
+                            answer: "Your Welcome"
+                        },
+                    ]
+                },
+                {
+                    id: 'cardOne', img: '/miguro_1.webp', title: 'Listening 4',
+                    questions: [
+                        {
+                            audio: "Please",
+                            answer: "Please"
+                        },
+                        {
+                            audio: "Good Afternoon",
+                            answer: "Good Afternoon"
+                        },
+                        {
+                            audio: "Good Evening",
+                            answer: "Good Evening"
+                        },
+                        {
+                            audio: "Good Morning",
+                            answer: "Good Morning"
+                        },
+                        {
+                            audio: "Goodbye",
+                            answer: "Goodbye"
+                        },
+                        {
+                            audio: "Thank you",
+                            answer: "Thank you"
+                        },
+                        {
+                            audio: "Thats right",
+                            answer: "Thats right"
+                        },
+                        {
+                            audio: "Welcome",
+                            answer: "Your Welcome"
+                        },
+                    ]
+                },
+                {
+                    id: 'cardOne', img: '/miguro_1.webp', title: 'Listening 5',
+                    questions: [
+                        {
+                            audio: "Please",
+                            answer: "Please"
+                        },
+                        {
+                            audio: "Good Afternoon",
+                            answer: "Good Afternoon"
+                        },
+                        {
+                            audio: "Good Evening",
+                            answer: "Good Evening"
+                        },
+                        {
+                            audio: "Good Morning",
+                            answer: "Good Morning"
+                        },
+                        {
+                            audio: "Goodbye",
+                            answer: "Goodbye"
+                        },
+                        {
+                            audio: "Thank you",
+                            answer: "Thank you"
+                        },
+                        {
+                            audio: "Thats right",
+                            answer: "Thats right"
+                        },
+                        {
+                            audio: "Welcome",
+                            answer: "Your Welcome"
+                        },
+                    ]
                 }
             ],
         };

@@ -2,7 +2,7 @@
 
     <div class="row">
         <div class="col-sm-12 col-lg-4 d-flex justify-content-center align-items-center">
-            <img src="/miguro_1.png" alt="" style="width: 80%;">
+            <img src="/miguro_1.webp" alt="" style="width: 80%;">
         </div>
         <div class=" col-sm-12 col-lg-7 p-2">
             <h4>Welcome to Miguro.com – Learn Japanese, Experience Japan</h4>

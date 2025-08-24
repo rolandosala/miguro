@@ -168,7 +168,7 @@
                     </ol>
                 </div>
                 <div class="col-sm-12 col-lg-4 d-flex justify-content-center flex-column align-items-center">
-                    <img src="/miguro_3.png" alt="" style="width: 80%;">
+                    <img src="/miguro_3.webp" alt="" style="width: 80%;">
                     <button class="btn btn-outline-success form-control">Would you like a practice?</button>
                 </div>
             </div>
